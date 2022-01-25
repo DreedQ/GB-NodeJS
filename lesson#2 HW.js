@@ -16,25 +16,25 @@ const decreaseTimer =  (timer) => {
        } else if(timer.minutes === 0){
            if(timer.hours > 0){
                timer.hours --;
-               timer.minutes = 60;
+               timer.minutes = 59;
                decreaseTimer(timer)
            }
            if(timer.hours === 0){
                if(timer.days > 0){
                    timer.days --;
-                   timer.hours = 24;
+                   timer.hours = 23;
                    decreaseTimer(timer)
                }
                if( timer.days === 0){
                    if(timer.months > 0){
                        timer.months --;
-                       timer.days = 30;
+                       timer.days = 29;
                        decreaseTimer(timer)
                    }
                    if(timer.months === 0){
                        if(timer.years > 0){
                            timer.years --;
-                           timer.months = 12;
+                           timer.months = 11;
                            decreaseTimer(timer)
                        }
                        if( timer.years === 0 && timer.months === 0 && timer.days ===0 && timer.hours === 0 && timer.minutes === 0 && timer.seconds === 0){
