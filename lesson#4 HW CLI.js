@@ -85,3 +85,4 @@ const usePattern = (data) =>{
 }
 
 init();
+export default
